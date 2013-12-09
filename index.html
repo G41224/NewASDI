@@ -58,18 +58,18 @@
 					
 					
 					<div data-role="fieldcontain">
-						<label for="pName">Title:</label>
-						<input type="text" data-clear-btn="true" name="pName" id="pName" placeholder="ex. A Good Book Name"  class="required"/>
+						<label for="bTitle">Title:</label>
+						<input type="text" data-clear-btn="true" name="bTitle" id="bTitle" placeholder="ex. A Good Book Name"  class="required"/>
 					</div>
 					
 					<div data-role="fieldcontain">
-						<label for="giftType">Author:</label>
-						<input type="text" data-clear-btn="true" name="giftType" id="giftType" placeholder="ex.Jane Doe"  class="required"/>
+						<label for="bAuthor">Author:</label>
+						<input type="text" data-clear-btn="true" name="bAuthor" id="bAuthor" placeholder="ex.Jane Doe"  class="required"/>
 					</div>
 					
 					<div data-role="fieldcontain">
 						<label for="disciption">Book Disciption:</label>
-						<textarea cols="40" rows="8" name="textarea" id="giftDisc" placeholder="ex. A really good book about somthing"  class="required"></textarea>
+						<textarea cols="40" rows="8" name="textarea" id="bDisc" placeholder="ex. A really good book about somthing" ></textarea>
 					</div>
 					
 					<div data-role="fieldcontain">
@@ -80,7 +80,7 @@
 						<input type="reset" value="Reset"/>
 					</div>
 					
-					
+					<a href="#formErrors" id="addErrLink" data-rel="dialog" data-transition="pop">show errors</a>
 					
 				</form>
 				
@@ -105,6 +105,21 @@
 			
 		</div>
 		
+		<div data-role="dialog" id="formErrors" >
+				<div data-role="header" data-theme="a" data-position="fixed">
+					<h1>Missing Fields</h1>
+				</div>
+				<div data-role="content">
+					<ul>
+						<li>test.</li>
+						
+					</ul>
+					
+				</div>
+				
+				
+			</div>	
+		
 		
 		<div data-role="page" id="viewBook" data-add-back-btn="true">
 			<div data-role="header" data-position="fixed">
@@ -112,6 +127,14 @@
 			</div>
 			<div data-role="content">
 				
+				<a href="#" id="clearStorage">Clear Books</a>
+				<div id="bookList">
+					
+					<ul>
+					
+					
+					</ul>
+				</div>
 				
 			</div>
 			<div data-role="footer" data-position="fixed">
@@ -168,6 +191,7 @@
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 	<script type="text/javascript" src="JS/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="JS/json.js"></script>
 	<script type="text/javascript" src="JS/Main.js"></script>
 	
 
