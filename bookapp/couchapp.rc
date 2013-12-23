@@ -1,0 +1,10 @@
+{
+  "env": {
+    "local": {
+      "db": "http://127.0.0.1:5984/bookapp"
+    },
+    "cloudant": {
+      "db": "https://incerseendraledlyporthan:2whCIOCEFnyYKuKaXt5sA4a5@zcroasmun.cloudant.com/bookapp"
+    }
+  }
+}

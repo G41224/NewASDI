@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="This is a web app" />
+		<meta name="keywords" content="Zac Croasmun" />
+		<meta name="robots" content= "index, follow" />
+		<meta name="viewport" content="user-scalable=yes, width=device-width" />
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		
+		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+		
+		<title>Book List</title>
+	</head>
+	
+	
+	<body>
+		
+		<div data-role="page" id="home">
+			<div data-role="header" data-position="fixed">
+				<h1>Book List home</h1>
+				
+			</div>
+			<div data-role="content">
+				
+				<a href="#addBook" data-role="button" data-theme="b">Add A Book</a>
+				
+				<a href="#viewBook" data-role="button" data-theme="b">View Books</a>
+				
+				<a href="#about" data-role="button" data-theme="b">About</a>
+				
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul id="nav">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#addBook">Add Book</a></li>
+						<li><a href="#viewBook">View Books</a></li>
+						<li><a href="#about">About</a></li>
+						
+					</ul>
+					
+				</div>
+
+				
+			</div>
+			
+		</div>
+		
+		<div data-role="page" id="addBook" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed">
+				<h1>Add A Book</h1>
+			</div>
+			<div data-role="content" >
+				<form action="" method="post" id="bookForm">
+					
+					
+					<div data-role="fieldcontain">
+						<label for="bTitle">Title:</label>
+						<input type="text" data-clear-btn="true" name="bTitle" id="bTitle" placeholder="ex. A Good Book Name"  class="required"/>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="bAuthor">Author:</label>
+						<input type="text" data-clear-btn="true" name="bAuthor" id="bAuthor" placeholder="ex.Jane Doe"  class="required"/>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="disciption">Book Disciption:</label>
+						<textarea cols="40" rows="8" name="textarea" id="bDisc" placeholder="ex. A really good book about somthing" ></textarea>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<input type="submit" value="Save" data-theme="a"/>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<input type="reset" value="Reset"/>
+					</div>
+					
+					<a href="#formErrors" id="addErrLink" data-rel="dialog" data-transition="pop">show errors</a>
+					
+				</form>
+				
+			</div>
+			
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#addBook">Add Book</a></li>
+						<li><a href="#viewBook">View Books</a></li>
+						<li><a href="#about">About</a></li>
+						
+					</ul>
+					
+				</div>
+
+				
+			</div>
+			
+			
+		</div>
+		
+		<div data-role="dialog" id="formErrors" >
+				<div data-role="header" data-theme="a" data-position="fixed">
+					<h1>Missing Fields</h1>
+				</div>
+				<div data-role="content">
+					<ul>
+						<li>test.</li>
+						
+					</ul>
+					
+				</div>
+				
+				
+			</div>	
+		
+		
+		<div data-role="page" id="viewBook" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed">
+				<h1>View Books</h1>
+			</div>
+			<div data-role="content">
+
+					<ul id="newBooks" data-role="listview">
+					
+					
+					</ul>
+				
+				
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#addBook">Add Book</a></li>
+						<li><a href="#viewBook">View Books</a></li>
+						<li><a href="#about">About</a></li>
+						
+					</ul>
+					
+				</div>
+
+				
+			</div>
+			
+			
+			
+		</div>
+		
+		<div data-role="page" id="about" data-theme="a" data-add-back-btn="true">
+				<div data-role="header" data-position="fixed">
+				<h1>about page</h1>
+				
+				
+				</div>
+				<div data-role="content">
+				
+					<h2>About the app</h2>
+					<p> This app is for saving Books to remember and read later. 
+						Just fill in the requierd data hit save and your on your way. </p>
+				
+				</div>
+				<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#addBook">Add Book</a></li>
+						<li><a href="#viewBook">View Books</a></li>
+						<li><a href="#about">About</a></li>
+						
+					</ul>
+					
+				</div>
+
+				
+			</div>
+			</div>
+		
+		
+		
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http:////code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+  	<script src="jquery.couch.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	
+
+	</body>
+</html>
